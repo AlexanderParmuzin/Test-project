@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- header-compare -->
+    <header class="header__compare">
+      <div class="container container__compare">
+        <nav class="nav__compare">
+          <ul>
+            <li><a href="#">Главная </a></li>
+            <li>/</li>
+            <li><a href="#">Сравнение товаров</a></li>
+          </ul>
+        </nav>
+        <div class="block__compare">Сравнение товаров</div>
+      </div>
+    </header>
+    <!-- /.header-compare -->
+
+    <!-- container-comparison -->
+    <div class="container container__comparison">
+      <!-- top-comparison -->
+      <div class="top__comparison">
+        <div class="top__block first__block">
+          <div id="dropdown">
+            <label for="quest"></label>
+            <div class="first__block__name">Для категорий <i class="fas fa-question-circle" style="color: #F0F2F4"></i> </i></i></div>
+
+            <select name="quest" id="quest" class="select__categories" required>
+              <option value="Smartphones">Смартфоны</option>
+              <option value="Notebooks">Ноутбуки</option>
+              <option value="Freezers">Холодильники</option>
+              <option value="Toasters">Тостеры</option>
+            </select>
+          </div>
+
+          <div class="radio__group">
+            <input type="radio" id="all-parameters" name="diference" value="all-parameters"
+                   checked>
+            <label for="all-parameters">Все характеристики</label>
+
+            <div>
+                <input type="radio" id="difference-only" name="diference" value="difference-only" >
+                <label for="difference-only">Показать только различия</label>
+              </div>
+          </div>
+
+        </div>
+
+        <div class="top__block second__block">
+          <img
+            src="/images/phone1.png"
+            class="image__model first__model"
+            width="120px"
+            height="147px"
+          />
+          <img src="./images/Icons/x.png" alt="" class="first__closer" width="16px" height="16px;">
+          <div class="model__description first__description">
+            <a class="model__categorie" href="#">Смартфоны</a>
+            <div class="model__name">Apple iPhone 11 64 Gb (Gold)</div>
+            <div class="model__price">
+              49 999 P <span class="previous__price">60 999 P</span>
+            </div>
+            <div class="model__buttons">
+            <button class="button__model first__cart">В корзину</button>
+            <button class="button__model first__purchase">
+              <img src="/images/Icons/Телефон.png" /> Купить в 1 клик
+            </button>
+          </div>
+          </div>
+        </div>
+        <div class="top__block third__block">
+          <img
+            src="/images/phone2.png"
+            class="image__model second__model"
+            width="133px"
+            height="163px"
+          />
+          <img src="./images/Icons/x.png" alt="" class="second__closer" width="16px" height="16px;">
+          <div class="model__description second__description">
+            <a class="model__categorie" href="#">Смартфоны</a>
+            <div class="model__name">Xiomi Redmi Note 8 Pro (blue)</div>
+            <div class="model__price">
+              16 700 P <span class="previous__price">19 999 P</span>
+            </div>
+            <div class="model__buttons">
+            <button class="button__model second__cart">В корзину</button>
+            <button class="button__model second__purchase">
+              <img src="/images/Icons/Телефон.png" /> Купить в 1 клик
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.top-comparison -->
+      <!-- middle-comparison -->
+      <div class="middle__comparison">
+        <!-- Бонусы -->
+        <div class="parameter first__parameter">
+          <div class="parameter__name"></div>
+          <div class="subparameter first__subparameter">
+            <div class="parameter__name">Бонусные рубли</div>
+            <div class="phone__model first__subparameter">
+              <button class="button__bonuses"><span class="bb">ББ</span> + 2 000 бонусов</button>
+            </div>
+            <div class="phone__model first__subparameter">
+              <button class="button__bonuses"><span class="bb">ББ</span> + 1 000 бонусов</button>
+            </div>
+          </div>
+        </div>
+        <!-- Акции -->
+        <div class="parameter second__parameter">
+          <div class="subparameter first__subparameter">
+            <div class="parameter__name">Акции и специальные предложения</div>
+            <div class="phone__model first__subparameter">Рассрочка</div>
+            <div class="phone__model first__subparameter">
+              Скидка 50% на наушники
+            </div>
+          </div>
+        </div>
+        <!-- Наличие -->
+        <div class="parameter third__parameter">
+          <div class="subparameter first__subparameter">
+            <div class="parameter__name">Наличие</div>
+            <div class="phone__model first__subparameter">В наличии</div>
+            <div class="phone__model first__subparameter">От 3 до 5 дней</div>
+          </div>
+        </div>
+        <!-- Основные -->
+        <div class="parameter forth__parameter">
+          <div class="parameter__name">Основные</div>
+          <div class="subparameter first__subparameter">
+            <div class="subparameter__name first__subparameter">
+              Операционная система
+            </div>
+            <div class="phone__model first__subparameter">iOS 13</div>
+            <div class="phone__model first__subparameter">iOS 13</div>
+          </div>
+          <div class="subparameter second__subparameter">
+            <div class="subparameter__name second__subparameter">Цвет</div>
+            <div class="phone__model second__subparameter">золотой</div>
+            <div class="phone__model second__subparameter">черный</div>
+          </div>
+          <div class="subparameter third__subparameter">
+            <div class="subparameter__name third__subparameter">
+              Год выпуска
+            </div>
+            <div class="phone__model third__subparameter">2019</div>
+            <div class="phone__model third__subparameter">2019</div>
+          </div>
+        </div>
+
+        <!-- Процессор -->
+        <div class="parameter fifth__parameter">
+          <div class="parameter__name">Основные</div>
+          <div class="subparameter first__subparameter">
+            <div class="subparameter__name first__subparameter">
+              Производитель
+            </div>
+            <div class="phone__model first__subparameter">Apple</div>
+            <div class="phone__model first__subparameter">Apple</div>
+          </div>
+          <div class="subparameter second__subparameter">
+            <div class="subparameter__name second__subparameter">Тип</div>
+            <div class="phone__model second__subparameter">A13 Bionic</div>
+            <div class="phone__model second__subparameter">A13 Bionic</div>
+          </div>
+          <div class="subparameter third__subparameter">
+            <div class="subparameter__name third__subparameter">
+              Год выпуска
+            </div>
+            <div class="phone__model third__subparameter">2019</div>
+            <div class="phone__model third__subparameter">2019</div>
+          </div>
+        </div>
+        <!-- Экран -->
+        <div class="parameter sixth__parameter">
+          <div class="parameter__name">Экран</div>
+          <div class="subparameter first__subparameter">
+            <div class="subparameter__name first__subparameter">
+              Диагональ (дюймов)
+            </div>
+            <div class="phone__model first__subparameter">5,8</div>
+            <div class="phone__model first__subparameter">5,8</div>
+          </div>
+          <div class="subparameter second__subparameter">
+            <div class="subparameter__name second__subparameter">
+              Тип экрана
+            </div>
+            <div class="phone__model second__subparameter">
+              Super Retina XDR
+            </div>
+            <div class="phone__model second__subparameter">
+              Super Retina XDR
+            </div>
+          </div>
+          <div class="subparameter third__subparameter">
+            <div class="subparameter__name third__subparameter">
+              Разрешение экрана
+            </div>
+            <div class="phone__model third__subparameter">2436×1125 точек</div>
+            <div class="phone__model third__subparameter">2436×1125 точек</div>
+          </div>
+        </div>
+        <!-- Камера -->
+        <div class="parameter seventh__parameter">
+          <div class="parameter__name">Камера</div>
+          <div class="subparameter first__subparameter">
+            <div class="subparameter__name first__subparameter">
+              Количество основных камер
+            </div>
+            <div class="phone__model first__subparameter">3</div>
+            <div class="phone__model first__subparameter">3</div>
+          </div>
+          <div class="subparameter second__subparameter">
+            <div class="subparameter__name second__subparameter">
+              Разрешения основных камер
+            </div>
+            <div class="phone__model second__subparameter">
+              12 МПикс, 12 МПикс, 12 МПикс
+            </div>
+            <div class="phone__model second__subparameter">
+              12 МПикс, 12 МПикс, 12 МПикс
+            </div>
+          </div>
+          <div class="subparameter third__subparameter">
+            <div class="subparameter__name third__subparameter">
+              Функции основной камеры
+            </div>
+            <div class="phone__model third__subparameter">
+              Режим «Портрет», портретное освещение, оптическая стабилизация,
+              вспышка True Tone, Focus Pixels
+            </div>
+            <div class="phone__model third__subparameter">
+              Режим «Портрет», портретное освещение, оптическая стабилизация,
+              вспышка True Tone, Focus Pixels
+            </div>
+          </div>
+          <div class="subparameter forth__subparameter">
+            <div class="subparameter__name forth__subparameter">
+              Фронтальная камера
+            </div>
+            <div class="phone__model forth__subparameter">есть</div>
+            <div class="phone__model forth__subparameter">есть</div>
+          </div>
+          <div class="subparameter fifth__subparameter">
+            <div class="subparameter__name fifth__subparameter">
+              Разрешение фронтальной камеры
+            </div>
+            <div class="phone__model fifth__subparameter">12 Мпикс</div>
+            <div class="phone__model fifth__subparameter">12 Мпикс</div>
+          </div>
+          <div class="subparameter sixth__subparameter">
+            <div class="subparameter__name sixth__subparameter">Вспышка</div>
+            <div class="phone__model sixth__subparameter">
+              есть, светодиодная
+            </div>
+            <div class="phone__model sixth__subparameter">
+              есть, светодиодная
+            </div>
+          </div>
+        </div>
+        <!-- Память -->
+        <div class="parameter eigth__parameter">
+          <div class="parameter__name">Память</div>
+          <div class="subparameter first__subparameter">
+            <div class="subparameter__name first__subparameter">
+              Встроенная память
+            </div>
+            <div class="phone__model first__subparameter">64 Гб</div>
+            <div class="phone__model first__subparameter">64 Гб</div>
+          </div>
+        </div>
+        <!-- Питание -->
+        <div class="parameter ninth__parameter">
+          <div class="parameter__name">Питание</div>
+          <div class="subparameter first__subparameter">
+            <div class="subparameter__name first__subparameter">
+              Тип разъема для зарядки
+            </div>
+            <div class="phone__model first__subparameter">Lightning</div>
+            <div class="phone__model first__subparameter">Lightning</div>
+          </div>
+          <div class="subparameter second__subparameter">
+            <div class="subparameter__name second__subparameter">
+              Функция быстрой зарядки
+            </div>
+            <div class="phone__model second__subparameter">есть</div>
+            <div class="phone__model second__subparameter">есть</div>
+          </div>
+          <div class="subparameter third__subparameter">
+            <div class="subparameter__name third__subparameter">
+              Функция беспроводной зарядки
+            </div>
+            <div class="phone__model third__subparameter">есть</div>
+            <div class="phone__model third__subparameter">есть</div>
+          </div>
+        </div>
+        <!-- Подключение -->
+        <div class="parameter tenth__parameter">
+          <div class="parameter__name">Подключение</div>
+          <div class="subparameter first__subparameter">
+            <div class="subparameter__name first__subparameter">
+              Разъем Lightning 8 Pin <i class="fas fa-question-circle" onclick="popup()">
+                <span class="popuptext" id="myPopup"><span style="font-weight: 600;"> 4500 мАч</span>  - это примерно 30 часов активного использования устройства</span>
+            </i>
+            </div>
+            <div class="phone__model first__subparameter">есть</div>
+            <div class="phone__model first__subparameter">есть</div>
+          </div>
+          <div class="subparameter second__subparameter">
+            <div class="subparameter__name second__subparameter">
+              Разъем для наушников
+            </div>
+            <div class="phone__model second__subparameter">Lightning</div>
+            <div class="phone__model second__subparameter">Lightning</div>
+          </div>
+        </div>
+      </div>
+      <!-- /.middle-comparison -->
+      <!-- bottom-comparison -->
+      <div class="bottom-comparison">
+          <div class="bottom__title">Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A) и Смартфон Apple iPhone SE 2020 128GB Black (MXD02RU/A) - сравнение основных характеристик моделей</div>
+          <div class="bottom__buttons">
+              <button class="button__clear">Очистить список</button>
+              <button class="button__back"><i class="arrow__left"></i> Назад к товарам</button>
+          </div>
+      </div>
+      <!-- /.bottom-comparison -->
+    </div>
+
+
+    <script>
+        function popup() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle('show');
+        }
+    </script>
+  </body>
+</html>
